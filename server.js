@@ -120,18 +120,25 @@ app.get("/27", (req, res) => {
   res.send(`
     <html>
     <head>
-      <title> the main character  </title>
+      <title>the main character</title>
+      <style>
+        body {
+          margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: black;
+        }
+        img {
+          max-width: 100%;
+          max-height: 100vh;
+        }
       </style>
     </head>
 
     <body>
-      <div class="container">
-        <img src="Public/themaincharacter.png"> 
-        <style>
-          "max-width:100%; max-height:100%;"
-          <br>
-        </form>
-      </div>
+      <img src="/themaincharacter.png">
     </body>
     </html>
   `)
