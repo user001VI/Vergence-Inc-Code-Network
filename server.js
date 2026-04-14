@@ -57,7 +57,7 @@ app.get("/", (req, res) => {
     <body>
       <div class="container">
         <h1>enter code</h1>
-        <form method="POST" action="/check">
+        <form method="POST" action="/check" autocomplete="off">
           <input type="text" name="code" placeholder=" " required />
           <br>
         </form>
