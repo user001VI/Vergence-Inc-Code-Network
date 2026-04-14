@@ -47,6 +47,7 @@ app.get("/", (req, res) => {
           color: orange;
           background-color: #111; /* dark background */
           outline: none;
+          autocomplete: off;
 }
 
         
