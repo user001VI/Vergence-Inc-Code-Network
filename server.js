@@ -231,11 +231,19 @@ app.get("/whereishe", (req, res) => {
       <title>   </title>
       <style>
         body {
+         margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: black;
+          font-family: 'JetBrains Mono', monospace;
+          color: orange;
           heigth 100%
         }
         img.one{
-          width: 50%
-          height:50%
+          width: auto
+          height: auto
         }
       </style>
     </head>
