@@ -76,6 +76,7 @@ app.post("/check", (req, res) => {
   "user27": "/27",
   "67": "/67",
   "ROMAN BOX": "/romanbox",
+  "where is he": "/whereishe",
   
 };
   if (userCode === "user27") {
@@ -84,6 +85,12 @@ app.post("/check", (req, res) => {
   return (res.redirect("/67"));
 } else if (userCode === "ROMAN BOX") {
   return (res.redirect("/romanbox"));
+} else if (userCode === "where are you") {
+  return (res.redirect("/whereishe"));
+} else if (userCode === "where") {
+  return (res.redirect("/whereishe"));
+} else if (userCode === "where is he") {
+  return (res.redirect("/whereishe"));
 } else {
     res.send(`
     <html>
@@ -211,12 +218,43 @@ app.get("/romanbox", (req, res) => {
     </head>
 
     <body>
-      <img src="Public/2cba020d3f1c2259b490a680f7609093.jpg">
+      <img src="Public/ceaserbox.png">
     </body>
     </html>
   `)
 });
 
+app.get("/whereishe", (req, res) => {
+  res.send(`
+    <html>
+     <head>
+      <title>   </title>
+      <style>
+        body {
+          margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: black;
+          font-family: 'JetBrains Mono', monospace;
+          color: orange;
+        }
+        .container {
+          background: rgba(0,0,0,0.0);
+          padding: 0px;
+          border-radius: 20px;
+          text-align: center;
+        }
+      </style>
+    </head>
+
+    <body>
+      <img src="Public/whereishe.png">
+    </body>
+    </html>
+  `)
+});
 // start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
