@@ -232,21 +232,21 @@ app.get("/whereishe", (req, res) => {
       <title>   </title>
       <style>
         .image-container {
-  width: auto;
-  height: 100vh;
-  border: 1px solid black;
-  margin-bottom: 25px;
-}
-.image-container img {
-  width: auto;
-  height: auto;
-  object-fit: contain;
+            width: auto;
+            height: 100vh;
+            border: 1px solid black;
+            margin-bottom: 25px;
         }
+        .image-container img {
+            width: auto;
+            height: auto;
+            object-fit: contain;
+                  }
       </style>
     </head>
 
     <body>
-      <img src="/whereishe.png" width:300 height:300>
+      <img src="/whereishe.png" width:auto height:auto>
     </body>
     </html>
   `)
