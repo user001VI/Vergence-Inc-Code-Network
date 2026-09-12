@@ -244,13 +244,13 @@ app.get("/whereishe", (req, res) => {
           padding: 0px;
           border-radius: 20px;
           text-align: center;
+          object-fill: contain;
         }
       </style>
     </head>
 
     <body>
       <img src="/whereishe.png" width:300 height:300>
-      {object-fill: contain}
     </body>
     </html>
   `)
