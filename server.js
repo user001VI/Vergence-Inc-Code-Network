@@ -233,13 +233,13 @@ app.get("/whereishe", (req, res) => {
       <style>
         .image-container {
   width: auto;
-  height: auto;
+  height: 100vh;
   border: 1px solid black;
   margin-bottom: 25px;
 }
 .image-container img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
         }
       </style>
