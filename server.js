@@ -16,7 +16,8 @@ app.get("/", (req, res) => {
       <style>
         body {
           margin: 0;
-          height: 300vh;
+          height: 100vh;
+          width: auto;
           display: flex;
           justify-content: center;
           align-items: center;
