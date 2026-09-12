@@ -211,7 +211,7 @@ app.get("/romanbox", (req, res) => {
     </head>
 
     <body>
-      img src: [insert photo name here]
+      <img src="Public/2cba020d3f1c2259b490a680f7609093.jpg">
     </body>
     </html>
   `)
