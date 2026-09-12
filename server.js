@@ -230,20 +230,16 @@ app.get("/whereishe", (req, res) => {
      <head>
       <title>   </title>
       <style>
-        body {
-          margin: 0;
-          height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: black; 
-        }
-        image.container {
-          background: rgba(0,0,0,0.0);
-          padding: 0px;
-          border-radius: 20px;
-          text-align: center;
-          object-fill: contain;
+        .image-container {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
         }
       </style>
     </head>
