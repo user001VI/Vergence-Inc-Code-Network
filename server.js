@@ -236,10 +236,9 @@ app.get("/whereishe", (req, res) => {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: black;
-          
+          background: black; 
         }
-        .container {
+        image.container {
           background: rgba(0,0,0,0.0);
           padding: 0px;
           border-radius: 20px;
