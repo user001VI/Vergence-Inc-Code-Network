@@ -231,17 +231,21 @@ app.get("/whereishe", (req, res) => {
      <head>
       <title>   </title>
       <style>
-        .image-container {
-            width: auto;
-            height: 100vh;
-            border: 1px solid black;
-            margin-bottom: 25px;
+        body {
+          margin: 0;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: black;
+          font-family: 'JetBrains Mono', monospace;
+          color: orange;
         }
-        .image-container img {
-            width: auto;
-            height: auto;
-            object-fit: contain;
-                  }
+        .container {
+          background: rgba(0,0,0,0.0);
+          padding: 0px;
+          border-radius: 20px;
+          text-align: center;
       </style>
     </head>
 
