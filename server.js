@@ -232,8 +232,8 @@ app.get("/whereishe", (req, res) => {
       <title>   </title>
       <style>
         .image-container {
-  width: 200px;
-  height: 300px;
+  width: auto;
+  height: auto;
   border: 1px solid black;
   margin-bottom: 25px;
 }
