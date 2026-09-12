@@ -201,7 +201,7 @@ app.get("/romanbox", (req, res) => {
       <style>
         body {
           margin: 0;
-          height: 100vh;
+          height: auto;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -219,7 +219,7 @@ app.get("/romanbox", (req, res) => {
     </head>
 
     <body>
-      <img src="/ceaserbox.png" width:300 height:300>
+      <img src="/ceaserbox.png" width:auto height:auto>
     </body>
     </html>
   `)
