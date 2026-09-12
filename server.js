@@ -218,7 +218,7 @@ app.get("/romanbox", (req, res) => {
     </head>
 
     <body>
-      <img src="Public/ceaserbox.png">
+      <img src="/ceaserbox.png">
     </body>
     </html>
   `)
@@ -250,7 +250,7 @@ app.get("/whereishe", (req, res) => {
     </head>
 
     <body>
-      <img src="Public/whereishe.png">
+      <img src="/whereishe.png">
     </body>
     </html>
   `)
