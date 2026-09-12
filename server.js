@@ -75,11 +75,15 @@ app.post("/check", (req, res) => {
   const codes = {
   "user27": "/27",
   "67": "/67",
+  "ROMAN BOX": "/romanbox
+  
 };
   if (userCode === "user27") {
   return (res.redirect("/27"));
 } else if (userCode === "67") {
   return (res.redirect("/67"));
+} else if (userCode === "ROMAN BOX") {
+  return (res.redirect("/romanbox"));
 } else {
     res.send(`
     <html>
@@ -177,6 +181,37 @@ app.get("/67", (req, res) => {
         setTimeout(() => {
           window.location.href = "/";
         }, 3000);
+    </body>
+    </html>
+  `)
+});
+app.get("/romanbox", (req, res) => {
+  res.send(`
+    <html>
+     <head>
+      <title>   </title>
+      <style>
+        body {
+          margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: black;
+          font-family: 'JetBrains Mono', monospace;
+          color: orange;
+        }
+        .container {
+          background: rgba(0,0,0,0.0);
+          padding: 0px;
+          border-radius: 20px;
+          text-align: center;
+        }
+      </style>
+    </head>
+
+    <body>
+      img src: [insert photo name here]
     </body>
     </html>
   `)
