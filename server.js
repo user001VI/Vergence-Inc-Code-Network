@@ -241,7 +241,7 @@ app.get("/whereishe", (req, res) => {
     </head>
 
     <body>
-      <img class:"one" src="/whereishe.png" width:300 height:300>
+      <img class="one" src="/whereishe.png" width:300 height:300>
     </body>
     </html>
   `)
