@@ -93,7 +93,7 @@ app.post("/check", (req, res) => {
 } else if (userCode === "where is he") {
   return (res.redirect("/whereishe"));
 } else if (usercode === "subject 27") {
-    return (res.redirect("/27"))
+    return (res.redirect("/27"));
 } else {
     res.send(`
     <html>
