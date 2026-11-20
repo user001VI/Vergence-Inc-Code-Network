@@ -298,7 +298,7 @@ app.get("/hesawake", (req, res) => {
       <body>
         <div class="container">
           <video autoplay loop playsinline>
-            <source src="DSCF3994.mp4" type="video/mp4">
+            <source src="/DSCF3994.mp4" type="video/mp4">
           </video>
         </div>
       </body>
