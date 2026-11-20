@@ -78,6 +78,7 @@ app.post("/check", (req, res) => {
   "67": "/67",
   "ROMAN BOX": "/romanbox",
   "where is he": "/whereishe",
+  "wake up hero": "/hesawake
   
 };
   if (userCode === "user27") {
@@ -94,6 +95,10 @@ app.post("/check", (req, res) => {
   return (res.redirect("/whereishe"));
 } else if (userCode === "subject 27") {
   return (res.redirect("/27"));
+  else if (userCode === "Wake Up Hero") {
+  return (res.redirect("/hesawake"));
+  else if (userCode === "wake up hero") {
+  return (res.redirect("/hesawake"));
 } else {
     res.send(`
     <html>
@@ -256,6 +261,50 @@ app.get("/whereishe", (req, res) => {
     </body>
     </html>
   `)
+});
+app.get("/hesawake", (req, res) => {
+  res.send(`
+    <html>
+      <head>
+        <title></title>
+        <style>
+          body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            font-family: 'JetBrains Mono', monospace;
+            color: orange;
+            overflow: hidden;
+          }
+
+          .container {
+            background: transparent;
+            padding: 0;
+            border-radius: 20px;
+            text-align: center;
+          }
+
+          video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        </style>
+      </head>
+
+      <body>
+        <div class="container">
+          <video autoplay muted loop playsinline>
+            <source src="He's Awake.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+        </div>
+      </body>
+    </html>
+  `);
 });
 // start server
 app.listen(PORT, () => {
