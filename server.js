@@ -95,9 +95,9 @@ app.post("/check", (req, res) => {
   return (res.redirect("/whereishe"));
 } else if (userCode === "subject 27") {
   return (res.redirect("/27"));
-  else if (userCode === "Wake Up Hero") {
+} else if (userCode === "Wake Up Hero") {
   return (res.redirect("/hesawake"));
-  else if (userCode === "wake up hero") {
+} else if (userCode === "wake up hero") {
   return (res.redirect("/hesawake"));
 } else {
     res.send(`
