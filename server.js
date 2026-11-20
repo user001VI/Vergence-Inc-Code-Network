@@ -78,7 +78,7 @@ app.post("/check", (req, res) => {
   "67": "/67",
   "ROMAN BOX": "/romanbox",
   "where is he": "/whereishe",
-  "wake up hero": "/hesawake
+  "wake up hero": "/hesawake",
   
 };
   if (userCode === "user27") {
